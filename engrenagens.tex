@@ -1,0 +1,132 @@
+\section{Transmissão por engrenagens}
+
+Alternativa à tranmissão de movimento em relação à correias. Tranmissão de movimento se da pelo contato entre os dentes das engrenagens. Esta forma de transmissão ela pode operar entre eixos paralelos e até eixos perpendiculares. São utilizadas quando a tranmissão de torque é muito alta. \textcolor{red}{Diametro primitivo}. \textcolor{red}{Angulo de pressão}
+	
+Na nomenclatura usual, utiliza-se a denominação de \textbf{coroa} para a engrenagem maior e \textbf{pinhão} para a engrenagem menor.
+
+	\begin{center}
+	\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/pinhao_vs_coroa.png}
+	\end{center}
+	
+\subsection{Tipos de Engrenagens}
+
+\begin{namedtheorem}[Engrenagem Cilindrica de Dentes retos]
+Engrenagem que possui dentes retos, portanto uma engrenagem aplica apenas uma força tangencial e normal à outra.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Engrenagem Cilindrica Helicoidal]
+Engrenagem que possui dentes retos, portanto uma engrenagem aplica apenas uma força tangencial e normal à outra.\\
+Pelo fato dos dentes serem helicoidais, o contato é feito de maneira gradual, de sorte que há um gradiente de força aplicado a superfície da engrenagem. Esse comportamento reduz consideravelmente o barulho envolvido na transmissão. Outra vanagem da engrenagem helicoidal, é que ela suporta cargas axiais, o que simplifica todos os outros componentes envolvidos na transmissão, pois mais carga estará sendo suportada pela engrenagem.
+
+	\begin{center}
+	\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/engrenao_helicoidal.png}
+	\end{center}
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Engrenagem Espinha de Peixe]
+
+Engrenagem helicoidal com uma direção até o meio da altura da engrenagem a na outra direção no restante, o objetivo desta engrenagem é aumentar a eficiência em relação à cargas axiais que a engrenagem suporta.
+
+\end{namedtheorem}
+
+\subsection{Tranmissão}
+
+Lança-se mão do conceito de \textbf{circunferência primitiva} que é um região abstrata da engrenagem à qual diversos parametros estão associados, todavia não é possível enxerga-la físicamente. Outra curva interessante é a \textbf{base do círculo} de cada engrenagem, referente à circunferenci externa de cada engrenagem.
+	
+\begin{namedthereom}[Evolvente]
+
+$$A_1 - A_0 = B_1 - A_0$$
+$$A_2 - A_0 = B_2 - A_0$$
+$$A_3 - A_0 = B_3 - A_0$$
+
+	\begin{center}
+	\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/engrenagem_perfil.png}
+	\end{center}
+
+\end{namedtheorem}
+
+A justificativa para o \textbf{perfil evolvente} nas engrenagens é que a linha de ação, portanto a trajetória feita pelo ponto de contato entre os dentes, seja uma reta tangente à ambos os circulos base. Nota-se pela figura abaixo que há um ponto de contato entre as \textbf{circunferencias primitivas}, este ponto é o CIR do movimento, e o angulo entre a tangente desse ponto e a linha de ação chamado de \textbf{angulo de pressão}.
+
+	\begin{center}
+	\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/gear_line.jpg}
+	\end{center}
+	
+Tal geometria garante um movimento sincronizado contínuo entre as engrenagens, sem variação de velocidade. É importante ressaltar que a força aplicada nas superfícies das engrenagens sempre será normal ao ponto de contato.
+	
+\subsection{Usinagem}
+
+Utiliza-se uma ferramenta que possua um formato negativo em relação à engrenagem.
+
+\subsection{Relação de Tranmissão}
+
+$$ i = \frac{d_2}{d_1} = \frac{Z_2}{Z_1} = \frac{n_1}{n_2} $$
+
+\begin{itemize}
+	\item $n_i$: Rotação da engrenagem \textit{i}, para calcular a velocidade angular, basta $\omega = 2\pi\times n_i$
+	\item $d_i$: Diâmetro primitivo da engrenagem \textit{i}
+	\item $Z_i$: Número de dentes da engrenagem \textit{i}
+\end{itemize}
+
+Para haver engrenamento entre as engrenagens é necessário que ambas as peças possuam o mesmo angulo de pressão e que possuam o mesmo módulo.
+
+$$ m = \frac{D_p}{z} $$
+
+Vale ressaltar que as engrenagens devem possuir a mesma velocidade tangencial em suas posições do angulo primitivo.
+
+	\begin{center}
+	\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/modulo.png}
+	\end{center}
+	
+Para um mesmo diametro primitivo, quanto maior o modulo, menor são os numeros de dentes, todavia maior seão as suas dimensões. Através do modulo também é possível determinar o passo das engrenagens.
+
+\subsection{Modos de Falha}
+
+Só ha esforço quando as engrenagens estiverem engranadas, portanto caracteriza-se um esforço cíclico. 
+
+\begin{enumerate}
+	\item Falha por fadiga
+	\item Trinca na raiz do dente, por conta do momento aplicado no momento do engrenamento
+\end{enumerate}
+
+\subsection{Esforços}
+
+	\begin{center}
+	\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/engrenagem_reta_transmissao.png}
+	\end{center}
+	
+	$$ W_t = F_{32}^t $$
+	
+	$$ T = \frac{d}{2}W_t $$
+	
+	$$ F_{23}^r = F_{23}^t tan(\phi) $$
+	
+	\begin{center}
+	\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/engrenagem_helicoidal_transmissao.png}
+	\end{center}
+	
+	$$ W_r = Wsen(\phi_n) $$
+	
+	$$ W_t = Wcos(\phi_n)cos(\psi) $$
+	
+	$$ W_a = Wcos(\phi_n)sen(\psi) $$
+
+\subsection{Caracteristicas}
+
+Vantagens:
+
+\begin{itemize}
+	\item Projeto compacto
+	\item Movimento sincronizado
+	\item Relação de transmissã constante
+	\item Potencia de tranmissão até 2500HP
+\end{itemize}
+
+Desvantagens:
+
+\begin{itemize}
+	\item Relação de tranmissão entre um par de engrenagem até 8(exceto coroa sem-fim)
+	\item Custo elevado
+	\item Elementos não padronizados
+\end{itemize}
+

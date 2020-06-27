@@ -1,0 +1,182 @@
+\section{Cubo-Eixo}
+
+Transmissão do movimemnto do eixo ao cubo, portanto transferência de momento torsor
+
+\subsection{Fixação Cubo-Eixo por Atrito}
+
+Fixação através de um ajuste forçado, portanto utilizando somente o atrito para fixar.
+
+\begin{itemize}
+	\item Limite do torque para que não haja deformação plastica do eixo
+	\item Não necessita usinagem do eixo
+	\item Não adiciona uniformidades nas peças, portanto não há concentradores de tensão
+	\item Baixo custo
+	\item Dano na desmontagem
+\end{itemize}
+
+\subsection{Assento Cônico}
+
+Através de uma parte cônica do eixo e uma porca na parte cilindrica, fixa-se o eixo ao cubo pela força axial da porta, e há transmissão de momento torsor através do atrito entre o assento cônico e a parte conica do eixo
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/conico.png}
+
+\begin{itemize}
+	\item Limite elástico dos materiais
+	\item Não causa danos na desmontagem
+	\item Necessidade de usinagem
+	\item Gera concentração de tensão
+	\item Alto custo
+\end{itemize}
+
+\subsection{Bucha Cônica}
+
+Coloca-se uma bucha que vai fixa ao eixo, de maneira que se possa utilizar um sistema de fixação em qualquer parte ao longo do eixo. Funciona como a fixação do Assento Cônico, porcas prendem por tensões axiais a bucha, que irá transmitir os esforços do eixo para o cubo pelo atrito.
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/assento_conico_bucha.png}
+
+\begin{itemize}
+	\item Limite elástico dos materiais
+	\item Não causa danos na desmontagem
+	\item Necessidade de usinagem
+	\item Gera concentração de tensão
+	\item Ajuste axial e angular eixo-cubo
+	\item Alto custo
+\end{itemize}
+
+\subsection{Cubo Bipartido}
+
+Cubo é fixado através de elementos de fixação em ambos lados. O controle da força de compressão do cubo ao eixo é dada pelo torque que é aplicado nos elementos de fixação. O peso em ambos lados deve ser igual para que não haja desbalanceamento.
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/cubo_bipartido.png}
+
+\begin{itemize}
+	\item Há problemas para limitar a força no limite elástico no material
+	\item Ajuste axial e angular
+	\item Sem concentração de tensão
+	\item Não há danos na desmontagem
+	\item Alto custo
+\end{itemize}
+
+\subsection{Fixação Cubo-Eixo por Adesão}
+
+União em que utiliza-se de um adesivo para fixar o sistema Cubo-Eixo, havendo limitação do torque torsor pelo limite de cisalhamento do mesmo.
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/fixacao_adesivo.png}
+
+\textbf{Área da união}: $S_a = l_a \pi d$
+\textbf{Força cisalhamento no adesivo}: $F_t = 2\frac{M_t}{d}$
+\textbf{Tensão de cisalhamento}: $\frac{F_t}{S_a}$
+
+Sem ruptura da união sem $t \leq t_a$. Portanto as variáveis em que há possibilidade de se alterar é a área de união e a tensão máxima de cisalhamento do adesivo. 
+
+$$I_a \geq \frac{2M_t}{(d^2t_a\pi)} $$
+
+$I_a$ é o comprimento axial.
+
+\begin{itemize}
+	\item Alto custo
+\end{itemize}
+
+\subsection{Fixação por Travamento}
+
+Travamento através de elementos mecânicos, num primeiro caso, utiliza-se um pino transversal para realizar o travamento do sistema cubo-eixo, permitindo maiores torques transmitidos.
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/fixacao_travamento.png}
+
+Ajuste aderente do pino ao sistema cubo-eixo. O pino pode fallhar por cisalhamento.
+
+\begin{itemize}
+	\item Conjugado no eixo: $M_t = F_t * \frac{d}{2}$
+	\item Diametro do eixo: $d$
+	\item Tensão admissível ao cisalhamento no pino: $t_a$
+	\item Diametro do pino: $d_p$
+\end{itemize}
+
+Formula para dimensionamento do pino:
+$\boxed{d_p \geq 2\sqrt{\frac{M_t}{\pi d t_a}} }$
+
+\begin{itemize}
+	\item Necessidade de usinagem tanto do cubo tanto do eixo
+	\item Elemento de fixação extra
+	\item Torque transmitidos são superiores
+	\item Facil desmontagem
+	\item Sem ajuste angular nem axial
+	\item Gera descontinuidade na peça, portanto concentração de tensão
+\end{itemize}
+
+\subsection{Chavetas ou perfis entalhados}
+
+Eixo com chaveta que encaixa num rasgo do cubo, transmitindo o movimento pela fixação mecânica da chaveta. Ou pode-se fazer um perfil entalhado que encaixa no perfil do cubo
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/fixacao_chaveta.png}
+
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/eixo_entalhado.png}
+
+\begin{namedtheorem}[Falha por cisalhamento em chaveta] 
+
+\begin{itemize}
+	\item Área da União: $S_t = bL_t$
+	\item Força de cisalhamento da união: $F_t = 2\frac{M_t}{d}$
+	\item Tensão de cisalhamento uniforme: $t = \frac{F_t}{S_t}$
+\end{itemize}
+
+Para não haver deformação plastica:
+
+$\boxed{L_t \geq \frac{2M_t}{d t_a b} }$
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Falha por esmagamento em chaveta]
+
+\begin{itemize}
+	\item Área da União: $S_c = \frac{h}{2}L_c$
+	\item Força de compressão da união: $F_c = 2\frac{M_t}{d}$
+	\item Tensão de compressão uniforme: $\sigma = \frac{F_c}{S_c}$
+\end{itemize}
+
+Para não haver deformação plastica:
+
+$\boxed{L_c \geq \frac{4M_t}{d \sigma_a h} }$
+
+\end{namedtheorem}
+
+\begin{namedtheorem}[Falha por cisalhamento no entalho]
+
+\begin{itemize}
+	\item $N$ é o numero de dentes do entalho
+	\item $\eta$ é o coeficiente de correção de carga, geralmente $\eta = 1.25$
+\end{itemize}
+
+Para não haver deformação plastica:
+
+$\boxed{L_{et} \geq \frac{2M_t\eta}{d t_a b N} }$
+
+\begin{namedtheorem}
+
+\begin{namedtheorem}[Falha por esmagamento no entalho]
+
+\begin{itemize}
+	\item $N$ é o numero de dentes do entalho
+	\item $\eta$ é o coeficiente de correção de carga, geralmente $\eta = 1.25$
+\end{itemize}
+
+Para não haver deformação plastica:
+
+$\boxed{L_{ec} \geq \frac{2M_t\eta}{d \sigma_a h_e N} }$
+
+\begin{namedtheorem}
+
+Norma técnica \textbf{DIN 6885} mapea, em função do diametro, outros parametros para o projeto, como largura e altura da chaveta plana no cubo e no eixo.
+
+Caracteristicas
+
+\begin{itemize}
+	\item Conjugados moderados à elevados
+	\item Desmonta facilmente
+	\item Não há ajuste axial nem angular
+	\item Usinagem extensa, tanto do cubo quanto do eixo, além de um novo elemento no caso da chaveta
+	\item Há adição de descontinuidade, portanto havendo concentração de tensão
+	\item Custo elevado
+\end{itemize}
+
+

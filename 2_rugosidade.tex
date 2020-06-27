@@ -1,0 +1,73 @@
+\section{Rugosidade}
+
+Grandeza que mede o quão irregular é uma supefície.\\
+Usualmente a \textbf{rugosidade} é uma medida \textbf{estatística} do perfil de uma peça, isto é, trabalha-se com uma amostragem do perfil, e através de métricas, como \textbf{Rugosidade Média} e \textbf{Rugosidade Máxima} tenta-se classificar tal perfil.\\ As técnicas de medida de rugosidade consistem em alpapar a superfície, de sorte que, a primeira e a última partição de médida são desconsideradas, considerando que há aumento do erro de medida devido à aceleração/desaceleração do medidor.
+\begin{center}
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/carrinhos_2_rugo_a.png}
+\end{center}
+
+\begin{itemize}
+	\item $l_m$: comprimento total de avaliação
+	\item $l_t$: comprimento total
+	\item $l_e$: comprimento de amostragem
+\end{itemize}
+
+\textbf{Linha média}: Área acima da reta e área abaixo da linha do perfil possuem a mesma área.
+
+\begin{namedtheorem}[Rugosidade Média(Ra)]
+  Média aritmética da ordenada do perfil de uma superfície. As ordenadas são feitas em módulo
+\end{namedtheorem}
+
+$$ R_a = \frac{1}{l_m} \int_{0}^{l_m} \norm{y} dx$$
+
+Qualidade
+\begin{itemize}
+	\item Equipamento altamente disponível
+\end{itemize}
+
+Defeitos
+\begin{itemize}
+	\item Não descreve o perfil de maneira representativa pelo fato de ser a média, não detecta mudanças bruscas.
+	\item
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/carrinhos_2_rugo_a.png}
+\end{center}
+
+A média corresponde a área hachurada na figura acima
+
+\begin{namedtheorem}[Rugosidade Máxima]
+  Maior delta entre pico e vale sucessivo, isto é, mede a maior deterioração na peça no intervalo
+\end{namedtheorem}
+
+Qualidade:
+\begin{itemize}
+	\item Excelente medida para detectar falhas locais.
+\end{itemize}
+
+Defeitos:
+\begin{itemize}
+	\item Não é representativo do perfil inteiro
+	\item Equipamento específico para realização da medida
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/carrinhos2_rugo_y.png}
+\end{center}
+
+\begin{namedtheorem}[Desvio Aritmético Quadrático(RMS)]
+  \[Rq = \sqrt{\frac{y_1^2 + y_2^2 + \dots + y_n^2}{n}}\]
+\end{namedtheorem}
+
+\begin{namedtheorem}[Rugosidade Total]
+  Maior amplitude entre pico e vale de um perfil da peça inteira no intervalo avaliado.
+\end{namedtheorem}
+
+$$l_m = n\times l_e$$
+
+\begin{center}
+	\includegraphics[width=4cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/carrinhos2_rugo_t.png}
+\end{center}
+
+Para informações sobre notação, checar o apendice.

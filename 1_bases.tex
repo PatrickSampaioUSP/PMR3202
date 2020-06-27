@@ -1,0 +1,68 @@
+\section{Tolerância}
+
+Tolerância é uma restrição de medida de uma grandeza física. O projetista impõe as restrições permitidas à seu projeto para que não prejudique o funcionamento, todavia é importante ter em mente que tolerâncias mais rígidas adicionam custos de fabricação.
+
+\begin{namedtheorem}[Ajuste folgado]
+  Ajuste em que não há interesecção entre o intervalo de medidas do eixo e do furo
+  \[\boxed{Eixo: \overset{-0,025}{\underset{-0,050}{40.000}}. Furo: \overset{-0,01}{\underset{-0,02}{40.000}}}\]
+  Neste tipo de ajuste, há movimento relativo entre o eixo e o furo, mancais hidrodinâmicos trabalham neste regime, havendo necessidade de lubrificação.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Ajuste Forçado]
+  Eixo sempre possuirá raio maior que o tamanho do furo, o encaixe é feito de forma \textit{forçada}: \\
+   \[\boxed{Eixo: \overset{-0,02}{\underset{-0,01}{40.000}}. Furo: \overset{-0,03}{\underset{-0,04}{40.000}}}\]
+  Neste caso não há movimento relativo entre as peças, havendo transmissão de \textbf{momento torsor}. Onde quando se excede o momento torsor máximo, há movimento relativo.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Ajuste Incerto]
+  Há regiões do intervalo de tolerância onde há intereferência de valores, e há regiões onde não há interferência. Isto é, peças deste tipo de ajuste podem ser com \textbf{ajuste forçado} tanto como \textbf{ajuste folgado}
+  
+  \[\boxed{Eixo: \overset{-0,04}{\underset{-0,02}{40.000}}. Furo: \overset{-0,03}{\underset{-0,05}{40.000}}}\]
+\end{namedtheorem}
+
+\subsection{Semántica de Tolerância}
+
+\textbf{Afastamento Superior}: Diferença do valor da cota nominal e o limite superior da tolerância \\
+\textbf{Afastamento Inferior:} Diferença do valor da cota nominal eo limite inferior da tolerância \\
+\textbf{Campo de tolerância:} Diferença entre o \textit{Afastamento Superior} e o \textit{Afastamento Inferior} \\
+\textbf{Unidade de tolerância}: Valor numérico que serve para calcular tolerâncias de cenários específicos, esta intimamente ligada à \textbf{qualidade de trabalho}\\
+\textbf{Classe}: Posição da \textit{Qualidade} em relação a linha zero(cota nominal)\\
+\textbf{Qualidade de trabalho}: Amplitude do intervalo de tolerância. Havendo alguns tipos indicados para diferentes tipos de aplicações\\
+
+\subsection{Campos de Tolerância}
+
+Campos de tolerâncias são desvios fundamentais que irão ditar o intervalo de medidas aceitaveis para uma determinada aplicação de uma peça. Onde estes desvios fundamentais são ilustrados na figura abaixo
+
+\includegraphics[width=8cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/Campos-de-toler-ncia.png}
+\label{fig:campo_tolerancia}
+
+\begin{itemize}
+	\item Campos com letra maiúscula referem-se à furos
+	\item Campos com letra minúscula referem-se à eixos
+	\item O afastamento H e h possue afastamento inferior e superior, respectivamente, nulos, ou seja a cota nominal.
+\end{itemize}
+
+\begin{namedtheorem}[Como usar?]
+  Dado valores de medidas precisaremos classifica-los em tolerância ou dado em notação de tolerância precisaremos encontrar afastemento superior e inferior.
+
+	\begin{itemize}
+		\item Dado a tolerância e o diametro nominal da peça, descobrir a amplitude do intervalo de medidas na tabela \href{https://i.ibb.co/4dn7gK4/Tabela-1.png}{1}.
+		\item Identificar o campo de tolerância da medida na figura \ref{fig:campo_tolerancia}, isto irá dar o desvio mínimo se for um furo ou desvio máximo de for um eixo.
+	\end{itemize}
+	
+\end{namedtheorem}
+
+
+\subsection{Sistema Base}
+
+\begin{namedtheorem}[Sistema furo-base]
+Neste sistema, mantêm-se constante a medida do furo, e para obter os ajustes \textbf{forçado, incerto, folgado}, altera-se a tolerância do eixo. Portanto a linha da cota nominal refere-se a cota nominal do furo.
+
+\includegraphics[width=8cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/FuroBase.png}
+\end{namedtheorem}
+
+\begin{namedtheorem}[Sistema eixo-base]
+Neste sistema, mantêm-se constante a tolerância do eixo, e para obter o ajuste desejado altera-se a tolerância do furo, a linha de zero refere-se a cota nominal do eixo.
+
+\includegraphics[width=8cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/EixoBase.png}
+\end{namedtheorem}

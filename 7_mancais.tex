@@ -1,0 +1,100 @@
+\section{Mancais}
+
+Mancal é um elemento de máquina que é utilizado para apoiar eixos que devem possuir restrição de movimentos, sendo uma restrição axial, ou uma restrição radial.
+
+Uma das possíveis classificações de mancais que podem ser feitas, é pelo seu método de lubrificação
+
+\subsection{Mancais de Deslizamento à Óleo}
+
+Neste mancal ocorre movimento relativo entre o eixo e o mancal, de maneira que a velocidade de contato é diferente de 0.
+
+\begin{itemize}
+	\item Mancal mais simples
+	\item Baixo custo
+	\item Alto custo benefício
+\end{itemize}
+
+\subsection{Propriedades Lubrificantes}
+
+\begin{itemize}
+	\item Evitar em contato entre as parte(reduzindo assim o desgaste por abrasão)
+	\item Dissipar bem o calor
+	\item Baixo risco ambiental
+	\item Imune a variações de propriedades com a temperatura
+\end{itemize}
+
+\subsection{Lei de Petroff}
+
+Equação importante para os fundamentos de \textbf{mancais hidrodinâmicos}. Esta lei determina o coeficiente de atrito de um lubrificante em função de alguns parametros do mancal e do lubrificante utilizado.\\
+Os parametros elucidados abaixo serão entradas na Lei de Petrof.
+
+\begin{center}
+\includegraphics[width=6cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/petrof_esquema.png}\\
+\end{center}
+
+\begin{itemize}
+	\item W: Força radial atuante no eixo
+	\item l: comprimento do eixo
+	\item c: folga radial
+	\item N: rotação do eixo
+	\item P: carga lateral por área projetada
+	\item $\mu$: coef de viscosidade do oleo    
+\end{itemize}
+
+\begin{equation}
+	f = 2\pi^2 \frac{\mu N}{P}\frac{r}{c}
+\end{equation}
+
+Não será cobrado conceitos sobre como executar a fórmula acima, todavia é importante entende-la qualitativamente.
+
+Plotando os valores do \textbf{coeficiente de atrito} para diferentes configurações de $\frac{\mu N}{P}$ teremos uma curva com este perfil:
+
+\begin{center}
+\includegraphics[width=8cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/stribeck_curve.png}\\
+\end{center}
+
+Esta curva também é conhecida como \textbf{A curva de Stribeck}, conforme visto em \textbf{PMT3200}.A analise desta curva nos permite classificar alguns regimes de lubrificação.
+
+\begin{enumerate}
+	\item \textbf{Lubrificação Limite}: Regime de maior desgaste, há amplo contato entre as peças, devido a fina camada de óleo
+	\item \textbf{Lubrificação Mista}: Óleo sustenta parcialmente a carga do eixo
+	\item \textbf{Lubrificação Hidrodinâmica}: Total separação entre o eixo e o mancal, o eixo fica girando sobre uma fina camada de óleo
+\end{enumerate}
+
+\subsection{Mancal Hidrodinâmico}
+
+\textbf{TL;DR}
+
+\begin{itemize}
+	\item Aplicações em grandes eixos, este mancal é capaz de aguentar grandes cargas
+	\item Necessidade de lubrificação constante
+	\item Câmara interna do mancal é feia do \textbf{metal de patente}, um metal mais mole que o eixo, que não irá causar danos ao eixo caso haja contato.
+	\item Parametros de projeto: (1)velocidade do eixo, (2)viscosidade do lubrificante, (3)carga atuante no mancal, (4)folga diametral
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=8cm]{C:/Users/patri/Downloads/Poli/lateco/carrinhos_teoria/images/hydro_bearing.jpg}\\
+\end{center}
+
+\begin{namedtheorem}[Funcionamento]
+Este mancal tem como fundamento o eixo girar \textbf{sem haver contato} com o mancal, onde o eixo deve girar sobre uma fina camada de lubrificante que isola totalmente o contato metal-metal, evitando assim \textbf{desgaste por abrasão}. Tal fenômeno depende de alguns fatores e esta intimamente ligado a \textbf{Lei de Petroff} e a \textbf{Curva de Stribeck}.
+\begin{namedtheorem}
+\begin{namedtheorem}[Lubrificação]
+Este mancal possui \textbf{Lubrificação Constante}, isto é, sempre estará entrando lubrificante no mancal, e sempre estará saindo, de maneira que é necessário algum mecanismo para reaproveitar o lubrificante, além disso na maioria das aplicações o lubrificante entra devida a ação da gravidade, todavia há aplicações em que há lubrificação por pressão. O lubrificante deve ser escolhido com cuidado, pois uma \textbf{viscosidade muito baixa} haverá lubrificação limite, havendo contato metal-metal, e \textbf{viscosidade muito alta} haverá superaquecimento do mancal.
+\end{namedtheorem}
+
+\begin{namedtheorem}[Material]
+Quanto ao material, utiliza-se a liga \textbf{metal de babbit} que é uma composição de \textbf{Chumbo(Pb)}, \textbf{Estanho(Sn)}, \textbf{Antimônio(Sb)} e \textbf{Cobre(Cu)}. Tal metal é mais mole que o material dos eixos, de sorte que, ao haver contato entre o eixo e a câmara interna, apenas a câmara deve sofrer desgaste por abrasão, desta forma esta liga é altamente frequente em mancais hidrodinamicos.
+\end{namedtheorem}
+
+\subsection{Mancais Hidrostáticos}
+
+São mancais cujo funcionamento é igual ao do \textbf{mancal hidrodinâmico}, todavia a injeção de lubrificante é feita de forma \textbf{pressurizada}, o que significa que deve haver um mecanismo de pressurização do óleo além de reutilização. Todavia este mancal é muito útil quando a aplicação exige que o eixo tenha movimento intermitente.
+
+\subsection{Mancais Aeroestáticos}
+
+\begin{itemize}
+	\item Mancais cujo contato eixo mancal é anulado. Eixo fica flutuando sobre uma camada fina de ar
+	\item Aplicações onde o eixo deve girar em altissima velocidade
+	\item Alto custo associado ao equipamento
+\end{itemize}
